@@ -7,31 +7,15 @@
     <!-- rawgithack development URL -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
-    <style>
-      .arjs-loader {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .arjs-loader div {
-        text-align: center;
-        font-size: 1.25em;
-        color: white;
-      }
-    </style>
+    <script src="./assets/main.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+
   </head>
   <body style='margin : 0px; overflow: hidden;'>
     <div class="arjs-loader">
       <div>Loading, please wait...</div>
-      <div>ver:1.0.0</div>
+      <br />
+      <div>ver:1.0.1</div>
     </div>
       <a-scene
         vr-mode-ui='enabled: false;'
@@ -39,13 +23,14 @@
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'
       >     
 
-          <a-assets>
-            <video id="rickroll" preload="auto"
+          <!-- <a-assets>
+              <video id="rickroll" preload="auto"
                   src="./assets/RickRoll.mp4"
                   width="160" height="90" autoplay loop="true"
-                  crossOrigin="anonymous">
-            </video>
-          </a-assets>
+                  crossOrigin="anonymous"
+              >
+              </video>
+          </a-assets> -->
 
 
           <a-nft
