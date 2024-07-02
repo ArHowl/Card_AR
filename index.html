@@ -31,6 +31,7 @@
   <body style='margin : 0px; overflow: hidden;'>
     <div class="arjs-loader">
       <div>Loading, please wait...</div>
+      <div>ver:1.0.0</div>
     </div>
       <a-scene
         vr-mode-ui='enabled: false;'
@@ -40,7 +41,7 @@
 
           <a-assets>
             <video id="rickroll" preload="auto"
-                  src="./Card_AR/assets/RickRoll.mp4"
+                  src="./assets/RickRoll.mp4"
                   width="160" height="90" autoplay loop="true"
                   crossOrigin="anonymous">
             </video>
@@ -48,11 +49,11 @@
 
 
           <a-nft
-              type='nft' url='./Card_AR/anchor/card_A2'
+              type='nft' url='./Card_AR/anchor/logo1'
               smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'
           >
               <a-entity material="shader: flat; src: #rickroll"
-                  geometry="primitive: plane; width: 1600; height: 900;"
+                  geometry="primitive: plane; width: 800; height: 450;"
                   position="0 0 0"
                   rotation="0 0 0"
               >
@@ -60,11 +61,11 @@
           </a-nft>
 
           <a-nft
-              type='nft' url='./Card_AR/anchor/card_B2'
+              type='nft' url='./Card_AR/anchor/logo2'
               smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'
           >
               <a-entity material="shader: flat; src: #rickroll"
-                  geometry="primitive: plane; width: 1600; height: 900;"
+                  geometry="primitive: plane; width: 800; height: 450;"
                   position="0 0 0"
                   rotation="0 0 0"
               >
