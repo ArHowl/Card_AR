@@ -37,27 +37,36 @@
         renderer="logarithmicDepthBuffer: true; precision: medium;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'
       >     
+
+          <a-assets>
+            <video id="rickroll" preload="auto"
+                  src="https://dn720407.ca.archive.org/0/items/rick-roll/Rick%20Roll.ia.mp4"
+                  width="160" height="90" autoplay loop="true"
+                  crossOrigin="anonymous">
+            </video>
+          </a-assets>
+
+
           <a-nft
               type='nft' url='./Card_AR/anchor/card_A2'
               smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'
           >
-              <a-entity
-                geometry="primitive: box"
-                material="color: purple"
-                scale="100 100 100"
-                position="0 0 -100"
+              <a-entity material="shader: flat; src: #rickroll"
+                  geometry="primitive: plane; width: 160; height: 90;"
+                  position="0 60 -250"
+                  rotation="0 35 0"
               >
               </a-entity>
           </a-nft>
+
           <a-nft
               type='nft' url='./Card_AR/anchor/card_B2'
               smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'
           >
-              <a-entity
-                geometry="primitive: box"
-                material="color: blue"
-                scale="100 100 100"
-                position="0 0 -100"
+              <a-entity material="shader: flat; src: #rickroll"
+                  geometry="primitive: plane; width: 160; height: 90;"
+                  position="0 60 -250"
+                  rotation="0 35 0"
               >
               </a-entity>
           </a-nft>
